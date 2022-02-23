@@ -1,0 +1,59 @@
+@use "../variables/variables" as var;
+@use "../variables/mixins";
+
+.rating-wrapper {
+  text-align: center;
+  margin: 5px 0px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.star-rating {
+  display: flex;
+}
+.rate-star {
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  width: 20px;
+  height: 20px;
+  filter: invert(80%) sepia(3%) saturate(34%) hue-rotate(325deg)
+    brightness(104%) contrast(90%);
+
+  &--active {
+    filter: invert(82%) sepia(54%) saturate(2938%) hue-rotate(353deg)
+      brightness(94%) contrast(80%);
+  }
+  &--left {
+    width: 10px;
+    overflow: hidden;
+  }
+  &--right {
+    width: 10px;
+    overflow: hidden;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+}
+
+.rating {
+  &--count {
+    align-self: center;
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+}
+
+.rating-text {
+  font-style: italic;
+  &--title {
+    font-weight: bold;
+    margin: 5px;
+  }
+}
+

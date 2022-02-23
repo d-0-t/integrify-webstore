@@ -1,0 +1,24 @@
+@use "./variables/variables" as var;
+@use "./variables/mixins";
+
+@use "./page-elements/PageContainers";
+@use "./page-elements/Home";
+@use "./page-elements/Contacts";
+@use "./page-elements/Posts";
+@use "./page-elements/Form";
+@use "./page-elements/Shop";
+@use "./page-elements/Details";
+@use "./page-elements/Cart";
+@use "./page-elements/NotFound";
+
+@use "./small-elements/Buttons";
+@use "./small-elements/Footnote";
+@use "./small-elements/SvgAnimation";
+@use "./small-elements/ProductSorter";
+@use "./small-elements/Rating";
+@use "./small-elements/ThemeSwitch";
+
+@use "./main-elements/Header";
+@use "./main-elements/Footer";
+@use "./main-elements/Custom";
+@use "./main-elements/DarkTheme";
