@@ -14,7 +14,7 @@ I chose https://fakestoreapi.com/ to display data in this particular case.
 - Implement **Search** functionality
 - No refresh upon navigation - **useNavigate hook** (previously useHistory)
 - Implement state persistance by using **localStorage**
-- Create a **Light and Dark theme**
+- Create a **Light and Dark theme** (you can switch the theme with the skull icon in the top left corner)
 - Implement **sorting** (optional)
 - **Details page** for the product
 
