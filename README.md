@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Web Shop FrontEnd Showcase Project
+## with TypeScript, React.js, Redux.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The point of this project was to make the FrontEnd part of a web store that uses some sort of dummy API to fetch data and uses the most modern and mainstream tools in web development as of now (TypeScript, React.js, Redux).
 
-## Available Scripts
+I chose https://fakestoreapi.com/ to display data in this particular case.
 
-In the project directory, you can run:
+## Basic requirements
+- **Use React, Redux, TypeScript**
+- Divide the app into smaller components. For example create a separate component for the card and separate component for the button
+- Implement a working **Cart System** as shown in the demo
+- Disable button once item is added to cart (or custom)
+- Show a **counter** on the cart icon
+- Implement **Search** functionality
+- No refresh upon navigation - **useNavigate hook** (previously useHistory)
+- Implement state persistance by using **localStorage**
+- Create a **Light and Dark theme**
+- Implement **sorting** (optional)
+- **Details page** for the product
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Extra functions I added
+- **Custom 404 error page for non-existing paths**
+- Five (5) **random products** on the home page
+- **Categories** for product types (/shop)
+- Some **optimization** with memo() export (product cards were affected)
+- Extra **accessibility with aria-labels** if needed (remove item button in cart only had the contents "X")
+- Fixing **middle-click functionality** - restoring the ability to open a new tab while using useNavigate hook
+- Fixed the issue of stuck scroll position (by **scrolling to the top** after navigation)
+- **Checkout** button with checkout form (no payment) and updating values, the form can also be hidden
+- **Cost** calculation
+- Ability to **add more than one of an item**
+- Ability to **empty cart**
+- Indication of **active page** in the nav bar
+- Indication of **active / selected category** (/shop)
+- Three (3) **sorting options** (prices descending/ascending, rating descending)
+- **Back to /shop button** on details page
+- **Rating visualization with stars (5)** written from scratch
+  
