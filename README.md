@@ -1,5 +1,5 @@
 # Web Shop FrontEnd Showcase Project
-### with TypeScript, React.js, Redux. Click for [ ❤️ **LIVE DEMO** ](https://d-0-t-fake-webstore.netlify.app/)❤️
+### with TypeScript, React.js, Redux, SASS. Click for [ ❤️ **LIVE DEMO** ](https://d-0-t-fake-webstore.netlify.app/)❤️
 
 The point of this project was to make the FrontEnd part of a web store that uses some sort of dummy API to fetch data and uses the most modern and mainstream tools in web development as of now (TypeScript, React.js, Redux).
 
