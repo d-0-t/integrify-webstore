@@ -32,8 +32,8 @@ function Shop() {
         <h2>My very fake shop</h2>
         <Search keyword={keyword} handleChange={handleSearch} />
         <Sorter />
-        <CategorySort />
       </div>
+      <CategorySort />
       <Products products={filteredProducts} />
     </main>
   );
