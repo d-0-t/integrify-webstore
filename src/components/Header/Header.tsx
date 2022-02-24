@@ -15,6 +15,7 @@ function Header() {
       <div className={`header-navigation ${otherTheme}`}>
         <Branding />
         <Navigation />
+        <div className="hamburger"></div>
       </div>
     </header>
   );

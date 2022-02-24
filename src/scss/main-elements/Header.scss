@@ -98,4 +98,7 @@
       min-height: 30px;
     }
   }
+  @include mixins.respond(small) {
+    display: none;
+  }
 }

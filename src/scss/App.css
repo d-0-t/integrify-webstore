@@ -1216,6 +1216,11 @@ form {
     min-height: 30px;
   }
 }
+@media (max-width: 500px) {
+  .nav {
+    display: none;
+  }
+}
 
 footer {
   justify-self: flex-end;

@@ -19,7 +19,7 @@ function Shop() {
   const handleSearch = useCallback(
     (event) => {
       let newKeyword = event.target.value;
-      const illegalChars = /[*]/g;
+      const illegalChars = /[.*+?^${}()|[\]\\]/g;
       newKeyword = newKeyword.replaceAll(illegalChars, "");
       dispatch(getKeyword(newKeyword));
     },
