@@ -1,6 +1,6 @@
 import { ProductType } from "../types/typesOfProduct";
 
-export default function useSortingFunction(
+export default function sortingFunction(
   option: string,
   allProducts: ProductType[]
 ) {
