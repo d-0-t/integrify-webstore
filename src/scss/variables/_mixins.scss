@@ -1,4 +1,9 @@
 @mixin respond($breakpoint) {
+  @if ($breakpoint == tiny) {
+    @media (max-width: 300px) {
+      @content;
+    }
+  }
   @if ($breakpoint == small) {
     @media (max-width: 500px) {
       @content;

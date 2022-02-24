@@ -8,7 +8,6 @@ body {
   margin: 0;
   font-family: "Roboto";
   color: rgb(27, 23, 12);
-  font-size: 1.1rem;
 }
 .bgcolor {
   position: fixed;
@@ -35,4 +34,8 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 300px;
+  @include mixins.respond(tiny) {
+    min-width: unset;
+  }
 }

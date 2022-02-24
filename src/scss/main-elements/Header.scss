@@ -102,3 +102,43 @@
     display: none;
   }
 }
+
+.hamburger {
+  display: none;
+}
+
+@include mixins.respond(small) {
+  .header-navigation {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 50px;
+  }
+  .hamburger {
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    &__icon {
+      align-self: center;
+      width: 40px;
+      height: 40px;
+      filter: invert(0.5);
+    }
+  }
+  .hamburger:hover .nav, .nav:hover {
+    display: block;
+  }
+  .nav {
+    min-width: unset;
+    position: absolute;
+    right: 0;
+    height: 35px;
+    &__item {
+      &__btn {
+        justify-content: flex-end;
+      }
+      &:last-of-type {
+        border-radius: 0px 0px 0px 12px;
+      }
+    }
+  }
+}

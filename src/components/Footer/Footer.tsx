@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <footer className={otherTheme}>
-      <div className="footer-text">Ⓒ All rights reserved by me in 2022.</div>
+      <div className="footer__text">Ⓒ All rights reserved by me in 2022.</div>
       <div className="footerlinks">
         <a
           href="https://www.linkedin.com/in/dora-sukolova-94420821b/"

@@ -1222,6 +1222,46 @@ form {
   }
 }
 
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .header-navigation {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 50px;
+  }
+
+  .hamburger {
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+  }
+  .hamburger__icon {
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    filter: invert(0.5);
+  }
+
+  .hamburger:hover .nav, .nav:hover {
+    display: block;
+  }
+
+  .nav {
+    min-width: unset;
+    position: absolute;
+    right: 0;
+    height: 35px;
+  }
+  .nav__item__btn {
+    justify-content: flex-end;
+  }
+  .nav__item:last-of-type {
+    border-radius: 0px 0px 0px 12px;
+  }
+}
 footer {
   justify-self: flex-end;
   display: flex;
@@ -1267,7 +1307,6 @@ body {
   margin: 0;
   font-family: "Roboto";
   color: #1b170c;
-  font-size: 1.1rem;
 }
 
 .bgcolor {
@@ -1294,6 +1333,12 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 300px;
+}
+@media (max-width: 300px) {
+  .app {
+    min-width: unset;
+  }
 }
 
 .darktheme__app {
